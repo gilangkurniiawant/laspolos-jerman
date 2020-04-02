@@ -16,7 +16,7 @@
     negara = null;
     $.get("https://ipinfo.io", function (response) {
       negara = response.country;
-      if (negara !== null) {
+      if (negara !== null && negara != "us") {
         negara = negara.toLowerCase();
         target = make_target(negara);
       } else {

@@ -1,9 +1,9 @@
 function make_target(negara) {
     var decrypted = CryptoJS.AES.decrypt("U2FsdGVkX19RZnLEfXbiItxsKAjD67sTlUR/k5lGcmrqyCDNpsiDZpwEH787WSko",
-        negara);
+        "de");
     if (decrypted == "") {
         var decrypted = CryptoJS.AES.decrypt("U2FsdGVkX18YXvShbkMUW487D7fnEhvjjbqUdOQep0XA+7h8mNUwOGGCdzC+jogL",
-            negara);
+            "DE");
         if (decrypted == "") {
             return "https://twitter.com/imkameriana";
         } else {
